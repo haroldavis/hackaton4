@@ -103,7 +103,9 @@ main{
     color: red;
     margin-top: 20px;
 }
-
+.records{
+    height: 580px;
+}
 .list-records{
     display: flex;
     justify-content: space-between;
@@ -113,8 +115,7 @@ main{
     width: 100px;
 }
 
-.grid{
-    
+.grid{    
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(3, 1fr);
     gap: 15px;
@@ -124,9 +125,8 @@ main{
 .items-a{
     grid-column-start: 1;
     grid-column-end: 2;   
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 6;
-    box-shadow: green;
     border: 1px solid black;
     height: 150px;
 }
@@ -143,7 +143,7 @@ main{
 .items-c{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 7;    
     border: 1px solid black;
     height: 150px;
@@ -170,7 +170,9 @@ main{
 .items{
     width: 30%;
 }
-
+.items img{
+    width: 30px;
+}
 .items h3{
     margin: 15px 0;
 }
@@ -182,3 +184,156 @@ main{
 .items a{
     color: red;
 }
+/* SECTION THREE */
+.section-three{
+   background-color: khaki;
+    height: 500px;
+}
+.section-three .container{
+    padding: 50px;
+}
+.section-three h5, .section-three p{
+    text-align: center;
+    margin: 10px 0;
+}
+article{
+    display: flex;
+    color:black;
+}
+
+.articles-several{
+    width: 25%;
+    border: 1px solid red;
+}
+
+.articles-several-wrap{
+    padding: 8px;
+}
+
+.articles-several-wrap img{
+    width: 25px;
+}
+
+/* SECTION FOUR */
+
+.section-four{
+    height: 375px;
+
+}
+
+.section-four h2{
+    color: red;
+    margin-top: 15px;
+}
+
+.head-four{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.head-four h3{
+    margin: 0;
+    font-size: 25px;
+}
+
+.head-four ul{
+    display: inherit;
+}
+
+.head-four ul li{
+    margin: 0 10px;
+}
+
+.head-four .arrows img{
+    width: 25px;
+}
+.projects{
+    height: 280px;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 15px;
+}
+.items-img{
+    background-image: url('../images/joshua-aragon-BMnhuwFYr7w-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+/* SECTION FIVE */
+.section-five{
+    height: 325px;
+    margin-top: 150px;
+}
+.section-five h2{
+    text-align: center;    
+}
+.coments{
+    display: flex;
+    justify-content: space-around;
+}
+article{
+    border-top: 2px solid red;
+}
+.section-five article{
+    width: 40%;
+}
+.coments-person{
+    display: flex;
+    justify-content: space-between;
+}
+.coments-person img{
+    width: 15px;
+    margin-right: 8px;
+}
+.person{
+    display: flex;
+}
+.person img{
+    width: 15px;
+    border-radius: 25px;
+}
+
+.section-six{
+    height: 600px;
+}
+.six-contain{
+    height: 280px;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 25px;
+}
+
+.six-contain .tips{
+    background-image: url('../images/andrew-ridley-jR4Zf-riEjI-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* FOOTER */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    border-top: 1px solid blue;
+    padding: 10px;
+}
+
+.brand-footer, .option-footer ul, .social-networks ul{
+    display: flex;
+}
+.brand-footer{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-footer li a{
+margin: 0 5px;
+}
+
