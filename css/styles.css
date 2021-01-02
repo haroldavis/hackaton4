@@ -118,6 +118,7 @@ main{
     display: grid;
     grid-template: repeat(6, 1fr) / repeat(3, 1fr);
     gap: 15px;
+    height: 580px;
 }
 
 .items-a{
@@ -127,6 +128,7 @@ main{
     grid-row-end: 6;
     box-shadow: green;
     border: 1px solid black;
+    height: 150px;
 }
 
 .items-b{
@@ -135,6 +137,7 @@ main{
     grid-row-start: 1;
     grid-row-end: 4;    
     border: 1px solid black;
+    height: 150px;
 }
 
 .items-c{
@@ -143,6 +146,7 @@ main{
     grid-row-start: 4;
     grid-row-end: 7;    
     border: 1px solid black;
+    height: 150px;
 }
 
 .card{
@@ -150,4 +154,31 @@ main{
 }
 .card img{
     width: 50px;
+}
+
+.solution{
+    margin: 30px 0;
+}
+
+.solution h2{
+    color: black;
+    text-align: center;
+}
+.items-alls{
+    display: flex;
+}
+.items{
+    width: 30%;
+}
+
+.items h3{
+    margin: 15px 0;
+}
+
+.items p{
+    margin: 15px 0;
+}
+
+.items a{
+    color: red;
 }
