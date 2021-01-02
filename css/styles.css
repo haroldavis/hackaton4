@@ -1,0 +1,53 @@
+.wrap{
+    margin: 10px 8px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: inherit;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+nav ul{
+    display: inherit;
+}
+nav ul li{
+    padding: 0 15px;
+}
+
+nav ul li:hover{
+    color: red;
+}
+
+.contact{
+    display: inherit;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.contact ul{
+    display: inherit;
+    align-items: center;
+}
+
+.cellphone{
+    padding-right: 10px;
+    color: red;
+}
+.email{
+    padding-left: 10px;
+    border-left: 1px solid red;
+}
+
+.contact input{
+    padding: 8px 15px;
+    background: white;
+    border: 1px solid red;
+    color: red;
+}
