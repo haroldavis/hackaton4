@@ -119,14 +119,14 @@ main{
     border-radius: 5px;
 }
 
-/* section records */
+/* section one */
 
 .container{
     max-width: 960px;
     margin: auto;
 }
 
-.container h3{
+.section-one h3{
     text-align: center;
     color: red;
     margin-top: 20px;
@@ -140,50 +140,90 @@ main{
     margin: 20px 0;
 }
 .image-records{
-    width: 100px;
+    width: 50px;
 }
 
 .grid{    
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(3, 1fr);
-    gap: 15px;
+    grid-template: repeat(1, 1fr) / repeat(2, 50%);
+    gap: 50px;
     height: 580px;
 }
 
-.items-a{
+.grid-left{
     grid-column-start: 1;
     grid-column-end: 2;   
-    grid-row-start: 2;
-    grid-row-end: 6;
-    border: 1px solid black;
-    height: 150px;
+    
+    height: 450px;
 }
-
-.items-b{
+.grid-left__subgrid{
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 50%);
+    height: 100%;
+    gap: 25px;
+}
+.card-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: wheat;
+}
+.card-2{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;    
-    border: 1px solid black;
-    height: 150px;
+    grid-row-end: 3;
+    background-color: wheat;    
 }
-
-.items-c{
+.card-3{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: 7;    
-    border: 1px solid black;
-    height: 150px;
+    grid-row-end: 5;
+    background-color: wheat;    
 }
-
+.grid-right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 450px;
+}
+.grid-right__subgrid{
+    display: grid;
+    grid-template: repeat(6, 1fr) / 80%;
+}
+.grid-right__subgrid h5{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-right__subgrid h2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid-right_subgrid p{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid-right__subgrid .grid-right__button{
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.grid-right__button input{
+    color: white;
+    background: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 5px 8px;
+    width: 30%;
+}
 .card{
-    margin: 10px 120px;
+    padding: 20px 15px;
+    height: 80%;
 }
 .card img{
     width: 50px;
 }
-
+/* SECTION TWO */
 .solution{
     margin: 30px 0;
 }
