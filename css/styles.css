@@ -2,22 +2,34 @@
     margin: 10px 8px;
 }
 
+.section-main{
+    background-image: url('../images/jordan-christian-kCY4qYyfyQI-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+/* Header */
 header{
+    padding: 5px 0;
+}
+
+header .wrap{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 nav{
-    display: inherit;
+    display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;    
 }
 
 nav ul{
-    display: inherit;
+    display: flex;
 }
+
 nav ul li{
     padding: 0 15px;
 }
@@ -33,7 +45,7 @@ nav ul li:hover{
 }
 
 .contact ul{
-    display: inherit;
+    display: flex;
     align-items: center;
 }
 
@@ -48,39 +60,55 @@ nav ul li:hover{
 
 .contact input{
     padding: 8px 15px;
-    background: white;
+    background: transparent;
     border: 1px solid red;
     color: red;
 }
+/* Main */
 
 main{
-    background-image: url(../images/jordan-christian-kCY4qYyfyQI-unsplash.jpg);
-    height: 520px;
+    
 }
 
-.main-title{
-    padding: 60px 306px;
-    width: 35%;
+.main-left{
+    display: grid;
+    grid-template: 100% / repeat(2, 1fr);
+    height: 400px;
+    padding: 75px 0;
 }
-.main-title h1{
-    color: black;
-    margin-bottom: 30px;
+.main-left__content{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.main-left__content h1{
+    font-size: 30px;
+    letter-spacing: 0.5px;    
+}
+.main-left__content p{
+    margin: 30px 0;
 }
 
-.main-title p{
-    margin-bottom: 30px;
+.main-left__content span{
+    color: red;
 }
 
 .signup{
     margin: 20px 0;
-    width: 60%;
+    width: 80%;
     background: white;
     padding: 2px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .signup input{
     border: none;
+    font-size: 20px;
+    padding: 5px 8px;
+}
+.signup input:focus{
+    outline : none;
 }
 
 .signup button{
